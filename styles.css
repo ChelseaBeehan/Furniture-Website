@@ -1,69 +1,64 @@
 .heroimage{
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.9)), url("img/hero.jpg");
-    height: 300px;
     background-position:center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
-    padding-top: 10%;
-    padding-bottom: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
 }
 
-.herocontents{
-    padding-top: 25px;
-    padding-bottom: 25px;
-    text-align: center;
-    color: white;
+h1{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 30px;
-    height: 100%;
-    width: 100%;
-    line-height: 0.5;
+    color: white;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.about{
+    height: 50vh;
+    width: 100vw;
+    background-color: rgb(240, 240, 240);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container1{
-    background-color:rgba(2, 0, 0, 0.048);
-}
-
-.container2{
     background-color: rgba(0, 0, 0, 0.856);
-    width:inherit;
-    height: 300px;
+    width:100vw;
+    height: 50vh;
 }
 
 .column{
     float:left;
-    width: 10%;
-    padding: 100px;
+    width: 100vw;
+    display: flex;
+    justify-content: left;
+    align-items: center;
 }
 
 h2{
     text-align: center;
-    padding-bottom: 20px;
-    padding-top: 50px;
-    padding-right: 10px;
-    padding-left: 10px;
     color: black;
-    font-size: 50px;
+    font-size: 30px;
     font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-.p1{
-    text-align: center;
-    color: white;
-    font-size: 70px;
-    font-style: italic;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 p{
     text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     color: black;
     font-size: 20px;
-    padding-left: 100px;
-    padding-right: 100px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    height: 200px;
+    margin-block-start: 0;
+    margin-block-end: 0;
 }
+
 
 .container3{
     background-color:rgba(2, 0, 0, 0.048); 
