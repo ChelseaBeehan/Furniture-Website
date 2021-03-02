@@ -100,14 +100,15 @@ h3{
 /*Grid Section*/
 
 img{
-    max-width: 260px;
+    max-width: 100%;
 }
 
 .container3{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, 1fr);
-    grid-gap: 10px;
+    gap: 10px;
+    background-color: rgb(240, 240, 240);
 }
 
 .item-a{
@@ -144,7 +145,29 @@ img{
     grid-row: 3 / 4;
 }
 
+h4{
+    font-size: 30px;
+    color: grey;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
 .item-h{
     grid-column: 2 / 4;
     grid-row: 4 / 5;
+}
+
+.container4{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: rgba(0, 0, 0, 0.856);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.gc{
+    color: white;
+    margin-bottom: 1.5em;
 }
