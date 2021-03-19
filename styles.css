@@ -209,6 +209,14 @@ h5{
     align-items: flex-end;
 }
 
+/* At 830px image centers to feature table */
+
+@media (max-width: 830px){
+    .column-image-b{
+        background-position: center;
+    }
+}
+
 .column-image-c{
     height: 200px;
     background: url(img/lounging.jpg);
@@ -220,11 +228,6 @@ h5{
     align-items: flex-end;
 }
 
-.column-left{
-    float: left;
-    width: 33.3%;
-    text-align: left;
-}
 
 h4{
     font-size: 20px;
@@ -269,6 +272,29 @@ h4{
     margin-left: 50px;
 }
 
+/* At 830px blogs display as columns*/
+
+@media (max-width: 830px){
+    .row{
+        flex-direction: column;
+    }
+}
+
+.column-left{
+    float: left;
+    width: 33.3%;
+    text-align: left;
+}
+
+/* At 830px each blog entry changes to full width */
+
+@media (max-width: 830px){
+    .column-left{
+        width: 100%;
+        padding-bottom: 50px;
+    }
+}
+
 .column-middle{
     margin-left: 25px;
     margin-right: 25px;
@@ -276,9 +302,28 @@ h4{
     text-align: left;
 }
 
+/* At 830px each blog entry changes to full width */
+
+@media (max-width: 830px){
+    .column-middle{
+        width: 100%;
+        padding-bottom: 50px;
+        margin: 0px;
+    }
+}
+
 .column-right{
     width: 33.3%;
     text-align: left;
+}
+
+/* At 830px each blog entry changes to full width */
+
+@media (max-width: 830px){
+    .column-right{
+        width: 100%;
+        padding-bottom: 50px;
+    }
 }
 
 /* Form Section */
@@ -293,7 +338,8 @@ h4{
 
 @media (max-width: 830px){
     .form-section{
-        display: block;
+        display: flex;
+        flex-wrap:wrap;
     }
 }
 
@@ -343,8 +389,6 @@ h6{
 @media (max-width: 830px){
     #form{
         width: 100vw;
-        float: left;
-        padding-bottom: 50px;
     }
 }
 
@@ -419,6 +463,13 @@ h6{
     width: 40%;
 }
 
+/* At 700px width changes to full viewport */
+
+@media (max-width: 700px){
+    #aboutblock{
+        width: 100vw
+    }
+}
 .about1{
     font-size: 15px;
     text-align: left;
