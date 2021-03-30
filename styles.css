@@ -550,7 +550,13 @@ h6{
     padding-top: 10px;
     padding-bottom: 10px;
     border: none;
+    cursor: pointer;
 }
+
+#formbutton:hover {
+    background-color: rgb(54, 53, 53);
+}
+
 
 /* Footer */
 
