@@ -1,6 +1,6 @@
 document.addEventListener("scroll", handleScroll);
 // get a reference to our predefined button
-var scrollbtn = document.querySelector(".scrollbtn");
+var scrollToTopBtn = document.querySelector(".scrollToTopBtn");
 
 function handleScroll() {
   var scrollableHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
@@ -8,14 +8,14 @@ function handleScroll() {
 
   if ((document.documentElement.scrollTop / scrollableHeight ) > GOLDEN_RATIO) {
     //show button
-    scrollbtn.style.display = "block";
+    scrollToTopBtn.style.display = "block";
   } else {
     //hide button
-    scrollbtn.style.display = "none";
+    scrollToTopBtn.style.display = "none";
   }
 }
 
-scrollbtn.addEventListener("click", scrollToTop);
+scrollToTopBtn.addEventListener("click", scrollToTop);
 
 function scrollToTop() {
   window.scrollTo({

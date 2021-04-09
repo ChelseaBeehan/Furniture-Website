@@ -608,7 +608,7 @@ h6{
     padding-left: 10px;
 }
 
-#scrollToTopBtn{
+#scrollbtn{
     position: fixed;
     bottom: 50px;
     right: 50px;
