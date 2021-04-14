@@ -10,6 +10,10 @@
     text-align: center;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 h1{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 30px;
@@ -620,3 +624,32 @@ h6{
     width: 50px;
     filter: invert(.5);
 }
+
+.to-top{
+    background: rgba(255,255,255,0.5);
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: rgb(59, 59, 59);
+    text-decoration: none;
+    transition: all .4s;
+    opacity: 0;
+}
+
+.to-top.active {
+    bottom: 50px;
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.to-top:hover{
+    background: rgba(255,255,255,0.8)
+}
+

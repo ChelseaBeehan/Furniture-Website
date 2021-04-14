@@ -1,25 +1,9 @@
-document.addEventListener("scroll", handleScroll);
-// get a reference to our predefined button
-var scrollToTopBtn = document.querySelector(".scrollToTopBtn");
+const toTop = document.querySelector(".to-top");
 
-function handleScroll() {
-  var scrollableHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-  var GOLDEN_RATIO = 0.5;
-
-  if ((document.documentElement.scrollTop / scrollableHeight ) > GOLDEN_RATIO) {
-    //show button
-    scrollToTopBtn.style.display = "block";
-  } else {
-    //hide button
-    scrollToTopBtn.style.display = "none";
-  }
-}
-
-scrollToTopBtn.addEventListener("click", scrollToTop);
-
-function scrollToTop() {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth"
-  });
-}
+window.addEventListener("scroll", ( ) => {
+    if (window.pageYOffset > 100) {
+        toTop.classList.add("active");
+    } else {
+        toTop.classList.remove("active");
+    }
+})
